@@ -1,0 +1,13 @@
+{{!< default}}
+
+{{#post}}
+<article class="{{post_class}}">
+
+    <h1><a href="{{ url }}">{{ title }}</a></h1>
+
+    <div class="post-content">{{ content }}</div>
+
+    <p class="meta">Posted on <span class="postdate">{{date format="MMM Do, YYYY"}}</span></p>
+
+</article>
+{{/post}}

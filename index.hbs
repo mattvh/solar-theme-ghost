@@ -1,0 +1,16 @@
+{{!< default}}
+
+
+{{#foreach posts}}
+
+<article class="{{post_class}}">
+
+    <h1><a href="{{url}}">{{title}}</a></h1>
+
+    <div class="post-content"><p>{{excerpt}}&hellip;</p></div>
+    
+</article>
+
+{{/foreach}}
+
+{{pagination}}
