@@ -21,8 +21,18 @@
 
 
 
+  {{#if @blog.cover}}
+    <div id="coverimg" style="background-image: url({{@blog.cover}})"></div>
+  {{/if}}
+
+
+
   <header id="header">
-    <h1><a href="{{@blog.url}}"><i class="icon-sun"></i> {{@blog.title}}</a></h1>
+    {{#if @blog.logo}}
+      <a id="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" /></a>
+    {{else}}
+      <h1><a href="{{@blog.url}}"><i class="icon-sun"></i> {{@blog.title}}</a></h1>
+    {{/if}}
     <p>{{@blog.description}}</p>
   </header>
 

@@ -126,6 +126,26 @@ h3 {
 	border: none;
 }
 
+#blog-logo img {
+	max-width: 484px;
+	height: auto;
+}
+
+#coverimg {
+	width: 100%;
+	height: 350px;
+	background-repeat: no-repeat;
+	background-position: center top;
+	-moz-box-shadow: inset 0 0 10px 1px #000;
+	-webkit-box-shadow: inset 0 0 10px 1px #000;
+	box-shadow: inset 0 0 10px 1px #000;
+}
+
+#blog-logo, #blog-logo:hover, #blog-logo:active {
+	background-color: transparent;
+	border: none;
+}
+
 #footer {
 	width: 500px;
 	margin: 50px auto 20px auto;
