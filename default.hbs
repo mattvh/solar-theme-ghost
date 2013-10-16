@@ -43,6 +43,7 @@
 
 
     <div id="sidebar">
+
       <nav>
         <ul>
           <li><a href="/">Home</a></li>
@@ -50,6 +51,17 @@
           <li><a href="{{@blog.url}}/rss/">RSS Feed</a></li>
         </ul>
       </nav>
+
+      {{#post}}
+      {{#if author}}
+        <div class="bio">
+          <img class="avatar" src="{{author.image}}" />
+          <h3>{{author.name}}</h3>
+          <p>{{author.bio}}</p>
+        </div>
+      {{/if}}
+      {{/post}}
+
     </div>
 
 

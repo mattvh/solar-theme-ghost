@@ -133,7 +133,7 @@ h3 {
 
 #coverimg {
 	width: 100%;
-	height: 300px;
+	height: 200px;
 	background-repeat: no-repeat;
 	background-position: center top;
 	-moz-box-shadow: inset 0 0 10px 1px #000;
@@ -177,6 +177,17 @@ h3 {
 	font-family: "Helvetica Neue", "Helvetica", serif;
 	font-size: 1.2em;
 	padding: 2px 4px;
+}
+
+#sidebar .bio {
+	margin-top: 30px;
+	font-size: 0.8em;
+}
+
+#sidebar .bio img.avatar {
+	width: 95px;
+	height: 95px;
+	border-radius: 95px;
 }
 
 
