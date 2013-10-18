@@ -29,9 +29,9 @@
 
   <header id="header">
     {{#if @blog.logo}}
-      <a id="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" /></a>
+      <a id="blog-logo" href="/"><img src="{{@blog.logo}}" /></a>
     {{else}}
-      <h1><a href="{{@blog.url}}"><i class="icon-sun"></i> {{@blog.title}}</a></h1>
+      <h1><a href="/"><i class="icon-sun"></i> {{@blog.title}}</a></h1>
     {{/if}}
     <p>{{@blog.description}}</p>
   </header>
@@ -48,7 +48,7 @@
         <ul>
           <li><a href="/">Home</a></li>
           <li><a href="http://twitter.com/redwall_hp">Twitter</a></li>
-          <li><a href="{{@blog.url}}/rss/">RSS Feed</a></li>
+          <li><a href="/rss/">RSS Feed</a></li>
         </ul>
       </nav>
 
