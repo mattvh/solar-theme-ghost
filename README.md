@@ -29,6 +29,13 @@ Customization
 Solar supports Ghost's logo and cover image features, and will work perfectly fine with or without them. If you wish to upload a cover image, it will appear above the rest of the page. An uploaded logo replaces the textual blog name. (If you later decide you don't want a logo or cover image, you can remove it by clicking on the appropriate option in Settings and selecting the trash can icon.)
 
 
+To-Do
+-----
+
+* Add syntax highlighting, possibly with [Prism.](http://prismjs.com/) There's already basic code block styling in place, but no syntax highlighting yet.
+* The Jekyll version of Solar has linkblog support, while the Ghost one does not. This is because there isn't a finalized plugin API for Ghost yet, and there is no built-in linkblogging or post meta feature as of yet. This may change as Ghost's feature set is filled out more.
+
+
 License
 ---------
 
