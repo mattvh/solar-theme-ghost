@@ -180,7 +180,7 @@ h3 {
 }
 
 #sidebar .bio {
-	margin-top: 30px;
+	margin-top: 40px;
 	font-size: 0.8em;
 }
 
@@ -236,6 +236,18 @@ img.center {
 	margin: 0 auto 1em auto;
 }
 
+pre code {
+	display: block;
+	background-color: #073642;
+	color: #93a1a1;
+	border: 1px solid #2d6472;
+    border-radius: 3px 3px 3px 3px;
+    overflow: auto;
+    padding: 6px 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
 
 
 /*** Pagination ***/
@@ -275,6 +287,10 @@ img.center {
 	#sidebar nav select.mnav {
 		display: block;
 		margin-bottom: 15px;
+	}
+
+	#sidebar .bio {
+		display: none;
 	}
 
 }
