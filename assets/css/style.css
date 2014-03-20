@@ -249,6 +249,24 @@ pre code {
     margin-bottom: 15px;
 }
 
+code[class*="language-"], pre[class*="language-"] {
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	white-space: pre;
+	white-space: pre-wrap;
+	word-break: break-all;
+	word-wrap: break-word;
+	font-family: Menlo, Monaco, "Courier New", monospace;
+	font-size: 1em;
+	line-height: 1.5;
+	text-shadow: 0;
+}
+
 
 
 /*** Pagination ***/
@@ -330,3 +348,25 @@ pre code {
 .icon-anchor {
 	font-size: 65%;
 }
+
+
+
+/*
+ * Prism.js Syntax Highlighting
+ * http://bit.ly/1ikaPpw
+ */
+.token.comment,.token.prolog,.token.doctype,.token.cdata { color: #93a1a1; }
+.token.punctuation { color: #586e75; }
+.namespace { opacity: .7; }
+.token.null,.token.operator,.token.boolean,.token.number { color: #cb4b16; } 
+.token.property { color: #b58900; }
+.token.tag { color: #268bd2; } 
+.token.string { color: #2aa198; } 
+.token.selector { color: #6c71c4; }
+.token.attr-name { color: #cb4b16; } 
+.token.entity,.token.url,.language-css .token.string, .style .token.string { color: #2aa198; }
+.token.attr-value,.token.keyword,.token.control,.token.directive,.token.unit { color: #859900; } 
+.token.statement,.token.regex, .token.atrule { color: #2aa198; }
+.token.placeholder,.token.variable { color: #268bd2; } 
+.token.important { color: #dc322f; font-weight: bold; } 
+.token.entity { cursor: help; }
