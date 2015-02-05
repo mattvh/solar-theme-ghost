@@ -185,11 +185,15 @@ h3 {
 	font-size: 0.8em;
 }
 
-#sidebar .bio img.avatar {
+#sidebar .bio .avatar {
+	display: inline-block;
 	width: 95px;
 	height: 95px;
 	border-radius: 95px;
+	background-size: cover;
+	background-position: center;
 }
+
 
 
 
@@ -212,7 +216,9 @@ article h1 a.anchor {
 article img {
 	display: block;
 	text-align: center;
+	width: 100%;
 	max-width: 500px;
+	cursor: pointer;
 	height: auto;
 	margin: 0 auto 1em auto;
 }
@@ -342,7 +348,7 @@ code[class*="language-"], pre[class*="language-"] {
   text-transform: none;
   line-height: 1.7;
 }
- 
+
 .icon-sun:before { content: '\e801'; }
 .icon-anchor:before { content: '\e800'; }
 .icon-anchor {
@@ -358,15 +364,15 @@ code[class*="language-"], pre[class*="language-"] {
 .token.comment,.token.prolog,.token.doctype,.token.cdata { color: #93a1a1; }
 .token.punctuation { color: #586e75; }
 .namespace { opacity: .7; }
-.token.null,.token.operator,.token.boolean,.token.number { color: #cb4b16; } 
+.token.null,.token.operator,.token.boolean,.token.number { color: #cb4b16; }
 .token.property { color: #b58900; }
-.token.tag { color: #268bd2; } 
-.token.string { color: #2aa198; } 
+.token.tag { color: #268bd2; }
+.token.string { color: #2aa198; }
 .token.selector { color: #6c71c4; }
-.token.attr-name { color: #cb4b16; } 
+.token.attr-name { color: #cb4b16; }
 .token.entity,.token.url,.language-css .token.string, .style .token.string { color: #2aa198; }
-.token.attr-value,.token.keyword,.token.control,.token.directive,.token.unit { color: #859900; } 
+.token.attr-value,.token.keyword,.token.control,.token.directive,.token.unit { color: #859900; }
 .token.statement,.token.regex, .token.atrule { color: #2aa198; }
-.token.placeholder,.token.variable { color: #268bd2; } 
-.token.important { color: #dc322f; font-weight: bold; } 
+.token.placeholder,.token.variable { color: #268bd2; }
+.token.important { color: #dc322f; font-weight: bold; }
 .token.entity { cursor: help; }

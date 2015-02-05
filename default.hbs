@@ -12,8 +12,15 @@
 
   <link href="{{asset 'css/style.css'}}" rel="stylesheet" />
   <link href="{{asset 'css/colors-dark.css'}}" rel="stylesheet" />
+  <link href="{{asset 'css/blueimp-gallery.min.css'}}" rel="stylesheet" />
 
   {{ghost_head}}
+  <script>
+  var setting = {
+    disqusShortName: undefined,
+    ga: undefined
+  };
+  </script>
 
 </head>
 
@@ -47,7 +54,6 @@
       <nav>
         <ul>
           <li><a href="{{@blog.url}}">Home</a></li>
-          <li><a href="http://twitter.com/redwall_hp">Twitter</a></li>
           <li><a href="{{@blog.url}}/rss/">RSS Feed</a></li>
         </ul>
       </nav>
@@ -55,7 +61,9 @@
       {{#post}}
       {{#if author}}
         <div class="bio">
-          <img class="avatar" src="{{author.image}}" />
+          <div class="avatar-wrapper">
+            <span class="avatar" style="background-image:url({{author.image}})"></span>
+          </div>
           <h3>{{author.name}}</h3>
           <p>{{author.bio}}</p>
         </div>
@@ -85,14 +93,33 @@
   {{ghost_foot}}
 
   <script src="{{asset 'js/jquery.mobilemenu.min.js'}}"></script>
+  <script src="{{asset 'js/blueimp-gallery.min.js'}}"></script>
   <script src="{{asset 'js/prism.js'}}"></script>
   <script>
     $(document).ready(function(){
+      var postContent = $('.post-content');
       $('#sidebar nav ul').mobileMenu({'topOptionText': 'Menu', 'prependTo': '#sidebar nav'});
+      if (postContent.length) {
+        postContent.find('img').on('click', function () {
+          var img = $(this).attr('src');
+          blueimp.Gallery([img]);
+        });
+      }
     });
   </script>
 
+  <script>
+    // Google Analytics Script
+    if (setting.ga) {
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+      ga('create', setting.ga, 'auto');
+      ga('send', 'pageview');
+    }
+  </script>
 
 </body>
 </html>
