@@ -1,6 +1,33 @@
 Solar Theme for Ghost
 =====================
 
+### A fork from [mattvh/solar-theme-ghost](https://github.com/mattvh/solar-theme-ghost)
+
+What's added ?
+--------
+
+- Improve stylesheet. Images in the mobile broswer will display well.
+- Using `background-image` instead of `<img />` tag. More flexible.
+- Optional Google Analytics and Disqus module. 
+- Add image gallery feature, using [blueimp-gallery](https://github.com/blueimp/Gallery)
+
+
+How to enable Google Analytics and Disqus ?
+--------
+
+Using your favorite editor, and edit the `default.hbs` file, find
+
+```javascript
+  var setting = {
+    disqusShortName: '',
+    ga: ''
+  };
+```
+and set the properties to your disqus short name and your google analytics track code.
+After saving the file, you need to restart the ghost server, to make the changes work. And then all done!
+
+----
+
 A stylish theme for [Ghost](http://ghost.org/) blogs, based on the [Solarized](http://ethanschoonover.com/solarized) color palette.
 
 ![Screenshot](http://i.imgur.com/P94J69S.png)
