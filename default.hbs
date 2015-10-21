@@ -44,13 +44,7 @@
 
     <div id="sidebar">
 
-      <nav>
-        <ul>
-          <li><a href="{{@blog.url}}">Home</a></li>
-          <li><a href="http://twitter.com/redwall_hp">Twitter</a></li>
-          <li><a href="{{@blog.url}}/rss/">RSS Feed</a></li>
-        </ul>
-      </nav>
+      {{navigation}}
 
       {{#post}}
       {{#if author}}
